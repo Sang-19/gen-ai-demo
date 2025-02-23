@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: url('background.jpg') no-repeat center center/cover;
+  color: white;
+}
+
+/* HEADER NAVIGATION */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li .active {
+  border-bottom: 2px solid white;
+}
+
+.alerts {
+  font-size: 20px;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.yellow-btn, .white-btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.yellow-btn {
+  background: yellow;
+}
+
+.white-btn {
+  background: white;
+}
+
+.scroll-down {
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+/* PRICING SECTION */
+.pricing {
+  text-align: center;
+  padding: 80px 50px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.plan {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.plan.best {
+  background: white;
+  color: black;
+}
+
+.plan i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.plan h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.plan .price {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  margin: 10px 0;
+}
+
+.booking-btn {
+  background: grey;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
